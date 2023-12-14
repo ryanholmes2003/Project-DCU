@@ -1,0 +1,53 @@
+h1 {
+    font-family: 'SmallCaps', sans-serif; /*For the H1 font*/
+    font-size: 2em; /*Size of font*/
+    font-weight: bold; /*This makes the text bold*/
+    font-variant: small-caps; /*This centers the H1 text*/
+    text-align: center; /*This centers the H1 text*/
+    margin-top: 1.0em;  /*This defines the margin above*/
+    margin-bottom: 0.5em; /*This defines the margin below*/
+}
+
+/* Same as bove but for H2*/
+h2 {
+    font-family: 'SmallCaps', sans-serif; 
+    font-size: 1.6em; 
+    font-weight: bold; 
+    font-variant: small-caps; 
+    text-align: center; 
+    margin-top: 1.0em;  
+    margin-bottom: 0.5em; 
+}
+/* For the rest of the font*/
+* {
+    font-family: 'SmallCaps', sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
+
+}
+.property-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .property-table th, .property-table td {
+    border: 1px solid black; 
+    padding: 8px; 
+    text-align: center; 
+  }
+/* This spaces out the images so it doesnt touch the text or hyperlinks*/
+.image-container {
+  margin-top: 20px; 
+}
+body {
+    background-color: beige;
+}
+.box {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.box {
+  width: 100;
+  height: 100;
+}

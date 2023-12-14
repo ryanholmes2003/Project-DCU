@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Style.css">
+
+  <title>Contact Form</title>
+</head>
+<body>
+  <!-- Formspree API stuff -->
+  <form
+    id="messageForm"
+    action="https://formspree.io/f/mkndwwpj"  
+    method="POST"
+  >
+    <label><p>      Your email to contact us:
+      <input type="email" name="email">
+    </label></9>
+
+    <label><p>     Your message:
+      <textarea name="message"></textarea>
+    </label>  <button type="submit">Send</button>
+  </p>
+ 
+  </form>
+
+  <script>
+    function submitContactForm() {
+      var fullName = document.getElementById('fullName').value;
+      var phoneNumber = document.getElementById('phoneNumber').value;
+      if (fullName === '' || phoneNumber === '') {
+        alert('Please fill out all fields.');
+        return;
+      }
+      alert('Full Name: ' + fullName + '\nPhone Number: ' + phoneNumber);
+      document.getElementById('contactForm').reset();
+    }
+  </script>
+</body>
+</html>
