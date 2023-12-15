@@ -30,7 +30,30 @@
       <td>€450,000</td>
     </tr>
   </table>
-
+  
+  <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+    <script>
+      new Splide( '#image-carousel' ).mount();
+    </script>
+    <script>
+      document.addEventListener( 'DOMContentLoaded', function () {
+        new Splide( '#image-carousel' ).mount();
+      } );
+    </script>
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img src="house1.jpg" alt="">
+        </li>
+        <li class="splide__slide">
+          <img src="house2.jpg" alt="">
+        </li>
+        <li class="splide__slide">
+          <img src="house3.jpg" alt="">
+        </li>
+      </ul>
+    </div>
+  </section>
   <!-- This is the images -->
   <div class="image-container">
     <img src="Images/house1.jpg">
@@ -40,6 +63,6 @@
     <img src="Images/house3.jpg">
     <p>D4 - Ryan - €450,000</p>
   </div>
-  <p><a href="RyansRealEstate.html">Back.</a></p>
+  <p><a href="index.html">Back.</a></p>
 </body>
 </html>
